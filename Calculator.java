@@ -28,28 +28,30 @@ public class Calculator {
     }
 
     public static int calculate(String intA, String operator, String intB){
-        int sum;
+        int sum = 0;
         //Take operator, find out which one it is, then use that operator on A and B
         int A = Integer.parseInt(intA);
         int B = Integer.parseInt(intB);
 
         if(operator == "+"){
             sum = A + B;
-            System.out.println(sum);
+            return sum;
         }
         else if(operator == "-"){
             sum = A - B;
-            System.out.println(sum);
+            return sum;
         }
         else if(operator == "*"){
             sum = A * B;
-            System.out.println(sum);
+            return sum;
         }
         else if(operator == "/"){
             sum = A / B;
-            System.out.println(sum);
+            return sum;
         }
-        return sum;
+        else{
+            return sum;
+        }
        
     }
 
